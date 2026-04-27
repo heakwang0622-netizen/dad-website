@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -74,8 +75,14 @@ export default function Home() {
         <div className="grid gap-4 md:grid-cols-2">
           <article className="rounded-xl bg-white p-4 shadow-sm ring-1 ring-blue-100">
             <p className="mb-3 text-sm font-semibold text-slate-700">비포 (Before)</p>
-            <div className="flex h-48 items-center justify-center rounded-lg border-2 border-dashed border-blue-200 bg-blue-50 text-sm text-slate-500">
-              작업 전 사진 자리 (추후 교체)
+            <div className="relative h-48 overflow-hidden rounded-lg border border-blue-200 bg-blue-50">
+              <Image
+                src="/images/배관123.jpg"
+                alt="배관 작업 전 현장 사진"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </article>
           <article className="rounded-xl bg-white p-4 shadow-sm ring-1 ring-blue-100">
