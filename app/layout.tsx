@@ -25,10 +25,10 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         <header className="border-b border-blue-100 bg-white">
           <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-4">
-            <Link href="/" className="text-lg font-black tracking-tight text-slate-800">
+            <Link href="/" className="text-2xl font-black tracking-tight text-slate-800">
               신촌종합설비
             </Link>
-            <nav className="flex items-center justify-end gap-4 text-sm font-medium">
+            <nav className="flex items-center justify-center gap-6 text-base font-medium">
               <Link href="/" className="text-slate-700 hover:text-blue-700">
                 홈
               </Link>
@@ -58,7 +58,7 @@ export default function RootLayout({
               </Link>
               <a
                 href="tel:010-7553-2981"
-                className="rounded-lg bg-blue-700 px-3 py-2 text-sm font-bold text-white hover:bg-blue-800"
+                className="rounded-lg bg-blue-700 px-3 py-2 text-base font-bold text-white hover:bg-blue-800"
               >
                 📞 010-7553-2981
               </a>
