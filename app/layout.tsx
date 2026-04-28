@@ -56,12 +56,6 @@ export default function RootLayout({
               <Link href="/contact" className="text-slate-700 hover:text-blue-700">
                 문의하기
               </Link>
-              <a
-                href="tel:010-7553-2981"
-                className="rounded-lg bg-blue-700 px-3 py-2 text-base font-bold text-white hover:bg-blue-800"
-              >
-                📞 010-7553-2981
-              </a>
             </nav>
           </div>
         </header>
