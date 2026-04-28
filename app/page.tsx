@@ -2,81 +2,52 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const businessServices = [
-    "누수탐지",
-    "수도 냉·난방",
-    "씽크대·하수구 뚫음",
-    "소방 배관 설비",
-    "변기·세면대 설치",
-    "언수도 녹임(해빙)",
-  ];
-
   return (
     <section className="space-y-10">
-      <div className="grid items-center gap-6 rounded-2xl bg-gradient-to-r from-blue-900 to-blue-700 px-6 py-10 text-white shadow-xl sm:px-8 md:grid-cols-2 md:py-12">
-        <div className="rounded-xl border border-white/20 bg-white/10 p-5">
-          <div className="flex items-center gap-2 text-sm font-bold tracking-wide text-blue-100">
-            <span aria-hidden>🚰</span>
-            <span aria-hidden>🔧</span>
-            <span>신촌종합설비</span>
-          </div>
-          <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">
-            하수구막힘, 누수탐지, 소방배관
-            <br />
-            긴급 출동 전문 업체
-          </h1>
-          <p className="mt-4 max-w-xl text-blue-100">
-            명함처럼 한눈에 보이는 서비스 구성과 전문 장비로
-            빠르고 정확한 설비 솔루션을 제공합니다.
+      <div className="relative flex min-h-screen items-center justify-center overflow-hidden rounded-2xl border border-blue-100 bg-slate-50 px-6 py-14 sm:px-8">
+        <Image
+          src="/images/배관123.jpg"
+          alt="배관 작업 배경 이미지"
+          fill
+          className="object-cover opacity-15 blur-[2px]"
+          priority
+        />
+        <div className="absolute inset-0 bg-white/70" />
+        <div className="relative z-10 w-full max-w-4xl text-center">
+          <p className="text-sm font-bold tracking-wide text-blue-700 sm:text-base">
+            서울 · 경기 · 인천 24시간 긴급출동
           </p>
-          <div className="mt-4 grid grid-cols-2 gap-2 text-sm font-semibold">
-            {businessServices.map((service) => (
-              <div key={service} className="rounded-md bg-white/15 px-3 py-2">
-                {service}
-              </div>
-            ))}
+          <h1 className="mt-5 text-5xl font-black tracking-tight text-blue-900 sm:text-6xl md:text-7xl">
+            신촌 종합설비
+          </h1>
+          <div className="mt-8">
+            <a
+              href="tel:010-7553-2981"
+              className="inline-flex w-full items-center justify-center rounded-xl bg-blue-700 px-6 py-4 text-lg font-extrabold text-white shadow-lg transition hover:bg-blue-800 sm:w-auto"
+            >
+              📞 상담문의 : 010-7553-2981
+            </a>
           </div>
-          <div className="mt-4 rounded-md border border-red-300/70 bg-red-500 px-3 py-2 text-sm font-bold text-white">
-            내시경 검사 / 고압세척 / 열화상 카메라
-          </div>
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+          <p className="mt-8 text-base font-semibold text-slate-800 sm:text-lg">
+            하수구 · 씽크대 · 변기 · 누수탐지 · 소방배관 · 언수도녹임 · 막힘 해결
+          </p>
+          <p className="mt-3 text-sm font-bold text-blue-700 sm:text-base">
+            배관 내시경검사 · 고압세척 · 열화상 카메라 전문
+          </p>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <Link
               href="/services"
-              className="rounded-lg bg-white px-4 py-2 text-center text-sm font-semibold text-blue-900"
+              className="rounded-lg border border-blue-300 bg-white px-5 py-3 text-sm font-semibold text-blue-800 transition hover:bg-blue-50"
             >
               서비스 보기
             </Link>
             <Link
               href="/contact"
-              className="rounded-lg border border-white px-4 py-2 text-center text-sm font-semibold text-white"
+              className="rounded-lg border border-blue-700 bg-blue-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-800"
             >
               문의하기
             </Link>
           </div>
-        </div>
-        <div className="rounded-xl bg-white/10 p-4">
-          <svg
-            viewBox="0 0 420 300"
-            className="h-56 w-full"
-            role="img"
-            aria-label="설비 작업 배관공 일러스트"
-          >
-            <rect x="0" y="0" width="420" height="300" rx="16" fill="#0B3A8F" />
-            <circle cx="290" cy="90" r="36" fill="#F8D0A0" />
-            <rect x="252" y="124" width="80" height="88" rx="16" fill="#F3F4F6" />
-            <rect x="260" y="134" width="64" height="22" rx="8" fill="#1D4ED8" />
-            <rect x="120" y="190" width="220" height="18" rx="9" fill="#93C5FD" />
-            <rect x="80" y="175" width="58" height="48" rx="8" fill="#60A5FA" />
-            <rect x="340" y="175" width="36" height="48" rx="8" fill="#60A5FA" />
-            <circle cx="112" cy="199" r="10" fill="#DBEAFE" />
-            <circle cx="358" cy="199" r="10" fill="#DBEAFE" />
-            <path d="M170 170 L220 130 L258 162" fill="none" stroke="#E2E8F0" strokeWidth="10" />
-            <rect x="146" y="62" width="64" height="16" rx="8" fill="#60A5FA" />
-            <rect x="156" y="78" width="44" height="56" rx="12" fill="#BFDBFE" />
-            <text x="24" y="42" fill="#DBEAFE" fontSize="18" fontWeight="700">
-              PLUMBING SERVICE
-            </text>
-          </svg>
         </div>
       </div>
 
