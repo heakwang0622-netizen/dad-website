@@ -44,7 +44,7 @@ export default function RootLayout({
         <main className="mx-auto w-full max-w-5xl flex-1 px-6 py-10 pb-32 md:pb-28">{children}</main>
         <footer className="border-t border-blue-100 bg-white">
           <div className="mx-auto w-full max-w-5xl px-6 py-4 text-sm text-slate-600">
-            24시간 출동 상담 | 010-7553-2981 | 서울 서대문구 신촌 일대
+            24시간 출동 상담 | 010-7553-2981 | 주소: 서울시 서대문구 창천동 2-26
           </div>
         </footer>
         <div className="fixed inset-x-0 bottom-0 z-50 border-t border-blue-100 bg-white/95 backdrop-blur">

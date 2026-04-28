@@ -2,20 +2,43 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  const businessServices = [
+    "누수탐지",
+    "수도 냉·난방",
+    "씽크대·하수구 뚫음",
+    "소방 배관 설비",
+    "변기·세면대 설치",
+    "언수도 녹임(해빙)",
+  ];
+
   return (
     <section className="space-y-10">
       <div className="grid items-center gap-6 rounded-2xl bg-gradient-to-r from-blue-900 to-blue-700 px-6 py-10 text-white shadow-xl sm:px-8 md:grid-cols-2 md:py-12">
-        <div>
-          <p className="text-sm font-bold tracking-wide text-blue-100">신촌종합설비</p>
-          <h1 className="mt-3 text-3xl font-bold leading-tight sm:text-4xl">
+        <div className="rounded-xl border border-white/20 bg-white/10 p-5">
+          <div className="flex items-center gap-2 text-sm font-bold tracking-wide text-blue-100">
+            <span aria-hidden>🚰</span>
+            <span aria-hidden>🔧</span>
+            <span>신촌종합설비</span>
+          </div>
+          <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">
             하수구막힘, 누수탐지, 소방배관
             <br />
             긴급 출동 전문 업체
           </h1>
           <p className="mt-4 max-w-xl text-blue-100">
-            다년간의 현장 경험을 바탕으로 정확한 원인 진단과 신속한 문제 해결을 제공합니다.
-            주거/상가/공장 설비 문제를 안전하게 처리합니다.
+            명함처럼 한눈에 보이는 서비스 구성과 전문 장비로
+            빠르고 정확한 설비 솔루션을 제공합니다.
           </p>
+          <div className="mt-4 grid grid-cols-2 gap-2 text-sm font-semibold">
+            {businessServices.map((service) => (
+              <div key={service} className="rounded-md bg-white/15 px-3 py-2">
+                {service}
+              </div>
+            ))}
+          </div>
+          <div className="mt-4 rounded-md border border-red-300/70 bg-red-500 px-3 py-2 text-sm font-bold text-white">
+            내시경 검사 / 고압세척 / 열화상 카메라
+          </div>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/services"
