@@ -3,6 +3,58 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+const trustPoints = [
+  {
+    emoji: "🚨",
+    title: "24시 긴급출동",
+    lines: [
+      "서울 · 경기 · 인천 지역 30분이면 도착!",
+      "출장비 무료! 야간/주말/공휴일 추가요금 없이",
+      "언제든 바로 출동합니다.",
+    ],
+  },
+  {
+    emoji: "🔧",
+    title: "20년 이상 경력자 팀",
+    lines: [
+      "단순 수리가 아닌 근본 원인을 찾아 해결합니다.",
+      "내시경 카메라 · 열화상 장비 · 고압세척기 등",
+      "전문 장비로 정확하게 진단합니다.",
+    ],
+  },
+  {
+    emoji: "💰",
+    title: "합리적인 비용",
+    lines: [
+      "현장 확인 후 작업 전에 비용을 먼저 안내드립니다.",
+      "숨겨진 추가요금 없이 투명하게 운영합니다.",
+    ],
+  },
+];
+
+const faqs = [
+  {
+    q: "방문 가능 지역은 어디인가요?",
+    a: "서울 전 지역, 경기도, 인천 지역 방문 가능합니다. 그 외 지역도 상담 후 조율 가능하니 언제든 문의주세요.",
+  },
+  {
+    q: "비용은 어떻게 결정되나요?",
+    a: "현장 상황에 따라 달라지며, 작업 전 반드시 비용을 먼저 안내드립니다. 출장비는 무료이며 숨겨진 추가요금은 없습니다.",
+  },
+  {
+    q: "업체를 선택할 때 어떤 점을 확인해야 하나요?",
+    a: "출장비 무료 여부, 작업 전 견적 안내 여부, 경력과 장비 보유 여부를 확인하세요. 저희는 세 가지 모두 충족합니다.",
+  },
+  {
+    q: "작업 후 하자가 생기면 어떻게 하나요?",
+    a: "작업 완료 후 일정 기간 내 동일 문제 발생 시 무상 재방문 서비스를 제공합니다.",
+  },
+  {
+    q: "예약은 어떻게 하나요?",
+    a: "전화(010-7553-2981) 또는 카카오톡 문의로 바로 접수 가능합니다. 24시간 운영합니다.",
+  },
+];
+
 const reviews = [
   {
     image: "/images/배관123.jpg",
@@ -23,6 +75,7 @@ const reviews = [
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -127,6 +180,73 @@ export default function Home() {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="rounded-2xl bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 px-6 py-12 text-white shadow-lg sm:px-8">
+        <h2 className="mb-8 text-center text-2xl font-black tracking-tight sm:text-3xl">신뢰 포인트</h2>
+        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
+          {trustPoints.map((item) => (
+            <article
+              key={item.title}
+              className="flex flex-col rounded-2xl bg-white/95 p-6 text-slate-900 shadow-md ring-1 ring-white/20"
+            >
+              <div className="mb-4 flex items-center gap-3">
+                <span className="text-5xl leading-none" aria-hidden>
+                  {item.emoji}
+                </span>
+                <svg className="h-14 w-14 shrink-0 text-blue-600" viewBox="0 0 64 64" fill="none" aria-hidden>
+                  <circle cx="32" cy="32" r="28" stroke="currentColor" strokeWidth="2" opacity="0.35" />
+                  <circle cx="32" cy="32" r="20" stroke="currentColor" strokeWidth="1.5" opacity="0.5" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-blue-900">{item.title}</h3>
+              <div className="mt-3 space-y-2 text-sm leading-relaxed text-slate-700">
+                {item.lines.map((line) => (
+                  <p key={line}>{line}</p>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="rounded-2xl bg-white px-6 py-12 shadow-sm ring-1 ring-slate-200 sm:px-8">
+        <h2 className="mb-8 text-center text-3xl font-black text-slate-900 sm:text-4xl">자주 묻는 질문 (FAQ)</h2>
+        <div className="mx-auto max-w-3xl space-y-3">
+          {faqs.map((item, index) => {
+            const isOpen = openFaqIndex === index;
+            return (
+              <div key={item.q} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+                <button
+                  type="button"
+                  onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                  className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-base font-bold text-slate-900 hover:bg-slate-50"
+                  aria-expanded={isOpen}
+                >
+                  <span>Q{index + 1}. {item.q}</span>
+                  <span className="shrink-0 text-xl text-blue-600">{isOpen ? "−" : "+"}</span>
+                </button>
+                {isOpen && (
+                  <div className="border-t border-slate-100 px-5 pb-4 pt-2 text-sm leading-relaxed text-slate-600">
+                    A. {item.a}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-blue-200 bg-blue-50 px-6 py-8 text-center sm:px-8">
+        <h2 className="text-xl font-bold text-blue-900 sm:text-2xl">긴급 · 예약 상담</h2>
+        <p className="mt-2 text-sm text-slate-600">24시간 접수 · 서울 · 경기 · 인천 출동</p>
+        <a
+          href="tel:010-7553-2981"
+          className="mt-4 inline-flex items-center justify-center rounded-xl bg-blue-700 px-8 py-4 text-lg font-bold text-white shadow-md hover:bg-blue-800"
+        >
+          📞 010-7553-2981
+        </a>
+        <p className="mt-3 text-xs text-slate-500">카카오톡 문의는 링크 준비 후 연결 예정입니다.</p>
       </section>
     </section>
   );
