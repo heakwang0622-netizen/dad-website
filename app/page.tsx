@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,7 +13,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-white/70" />
         <div className="relative z-10 w-full max-w-4xl text-center">
-          <p className="text-sm font-bold tracking-wide text-blue-700 sm:text-base">
+          <p className="text-2xl font-bold tracking-wide text-blue-700 sm:text-3xl">
             서울 · 경기 · 인천 24시간 긴급출동
           </p>
           <h1 className="mt-5 text-5xl font-black tracking-tight text-blue-900 sm:text-6xl md:text-7xl">
@@ -34,20 +33,6 @@ export default function Home() {
           <p className="mt-3 text-sm font-bold text-blue-700 sm:text-base">
             배관 내시경검사 · 고압세척 · 열화상 카메라 전문
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <Link
-              href="/services"
-              className="rounded-lg border border-blue-300 bg-white px-5 py-3 text-sm font-semibold text-blue-800 transition hover:bg-blue-50"
-            >
-              서비스 보기
-            </Link>
-            <Link
-              href="/contact"
-              className="rounded-lg border border-blue-700 bg-blue-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-800"
-            >
-              문의하기
-            </Link>
-          </div>
         </div>
       </div>
 
