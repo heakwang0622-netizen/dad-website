@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import HeaderNav from "./components/HeaderNav";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -28,35 +29,7 @@ export default function RootLayout({
             <Link href="/" className="text-2xl font-black tracking-tight text-slate-800">
               신촌종합설비
             </Link>
-            <nav className="flex items-center justify-center gap-6 text-base font-medium">
-              <Link href="/" className="text-slate-700 hover:text-blue-700">
-                홈
-              </Link>
-              <Link href="/services" className="text-slate-700 hover:text-blue-700">
-                누수탐지
-              </Link>
-              <Link href="/services" className="text-slate-700 hover:text-blue-700">
-                하수구막힘
-              </Link>
-              <Link href="/services" className="text-slate-700 hover:text-blue-700">
-                씽크대막힘
-              </Link>
-              <Link href="/services" className="text-slate-700 hover:text-blue-700">
-                변기막힘
-              </Link>
-              <Link href="/services" className="text-slate-700 hover:text-blue-700">
-                소방배관
-              </Link>
-              <Link href="/services" className="text-slate-700 hover:text-blue-700">
-                언수도녹임
-              </Link>
-              <Link href="/services" className="text-slate-700 hover:text-blue-700">
-                작업후기
-              </Link>
-              <Link href="/contact" className="text-slate-700 hover:text-blue-700">
-                문의하기
-              </Link>
-            </nav>
+            <HeaderNav />
           </div>
         </header>
         <main className="mx-auto w-full max-w-5xl flex-1 px-6 py-10 pb-32 md:pb-28">{children}</main>
