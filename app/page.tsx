@@ -35,43 +35,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-
-      <div className="grid gap-4 sm:grid-cols-3">
-        {[
-          { title: "하수구막힘", desc: "배관 내시경 점검 및 고압 세척" },
-          { title: "누수탐지", desc: "열화상/청음 장비 기반 정밀 탐지" },
-          { title: "소방배관", desc: "점검, 보수, 교체 및 유지 관리" },
-        ].map((item) => (
-          <article key={item.title} className="rounded-xl bg-white p-5 shadow-sm ring-1 ring-blue-100">
-            <h2 className="text-lg font-semibold">{item.title}</h2>
-            <p className="mt-2 text-sm text-slate-600">{item.desc}</p>
-          </article>
-        ))}
-      </div>
-
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold text-slate-900">작업 사진 (비포/애프터)</h2>
-        <div className="grid gap-4 md:grid-cols-2">
-          <article className="rounded-xl bg-white p-4 shadow-sm ring-1 ring-blue-100">
-            <p className="mb-3 text-sm font-semibold text-slate-700">비포 (Before)</p>
-            <div className="relative h-48 overflow-hidden rounded-lg border border-blue-200 bg-blue-50">
-              <Image
-                src="/images/배관123.jpg"
-                alt="배관 작업 전 현장 사진"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
-          </article>
-          <article className="rounded-xl bg-white p-4 shadow-sm ring-1 ring-blue-100">
-            <p className="mb-3 text-sm font-semibold text-slate-700">애프터 (After)</p>
-            <div className="flex h-48 items-center justify-center rounded-lg border-2 border-dashed border-blue-200 bg-blue-50 text-sm text-slate-500">
-              작업 후 사진 자리 (추후 교체)
-            </div>
-          </article>
-        </div>
-      </div>
     </section>
   );
 }
