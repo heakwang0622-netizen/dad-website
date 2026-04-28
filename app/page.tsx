@@ -1,6 +1,45 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
+
+const reviews = [
+  {
+    image: "/images/배관123.jpg",
+    text: "하수구 막힘이 심했는데 원인 진단부터 처리까지 빠르고 깔끔했습니다.",
+    author: "서울 마포구 고객",
+  },
+  {
+    image: "",
+    text: "누수탐지 정확도가 높아서 불필요한 공사 없이 바로 해결됐어요.",
+    author: "경기 고양시 고객",
+  },
+  {
+    image: "",
+    text: "야간 긴급출동도 친절하게 대응해주셔서 정말 만족했습니다.",
+    author: "인천 부평구 고객",
+  },
+];
 
 export default function Home() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % reviews.length);
+    }, 4000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const goPrev = () => {
+    setActiveIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
+  };
+
+  const goNext = () => {
+    setActiveIndex((prev) => (prev + 1) % reviews.length);
+  };
+
   return (
     <section className="space-y-10">
       <div className="relative flex min-h-screen items-center justify-center overflow-hidden rounded-2xl border border-blue-100 bg-slate-50 px-6 py-14 sm:px-8">
@@ -35,6 +74,60 @@ export default function Home() {
           </p>
         </div>
       </div>
+
+      <section className="rounded-2xl bg-gray-50 px-6 py-10 sm:px-8">
+        <div className="mb-6 flex items-center justify-between">
+          <h2 className="text-3xl font-black text-slate-900">작업 후기</h2>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={goPrev}
+              className="rounded-full border border-blue-200 bg-white px-3 py-2 text-lg font-bold text-blue-700 hover:bg-blue-50"
+              aria-label="이전 후기"
+            >
+              ←
+            </button>
+            <button
+              type="button"
+              onClick={goNext}
+              className="rounded-full border border-blue-200 bg-white px-3 py-2 text-lg font-bold text-blue-700 hover:bg-blue-50"
+              aria-label="다음 후기"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+        <div className="relative overflow-hidden">
+          <div
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+          >
+            {reviews.map((review, index) => (
+              <article key={index} className="w-full shrink-0 rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
+                {review.image ? (
+                  <div className="relative h-56 overflow-hidden rounded-lg">
+                    <Image
+                      src={review.image}
+                      alt={`작업 후기 사진 ${index + 1}`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 900px"
+                    />
+                  </div>
+                ) : (
+                  <div className="flex h-56 items-center justify-center rounded-lg border-2 border-dashed border-slate-300 bg-slate-100 text-slate-500">
+                    후기 이미지 자리 (추후 추가)
+                  </div>
+                )}
+                <p className="mt-4 text-lg text-amber-400">⭐⭐⭐⭐⭐</p>
+                <p className="mt-2 text-base font-medium text-slate-800">{review.text}</p>
+                <p className="mt-1 text-sm font-semibold text-blue-700">{review.author}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
     </section>
   );
 }
