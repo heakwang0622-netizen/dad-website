@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         <header className="border-b border-blue-100 bg-white">
           <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-4">
-            <Link href="/" className="text-2xl font-black tracking-tight text-slate-800">
+            <Link href="/" className="whitespace-nowrap text-2xl font-black tracking-tight text-slate-800">
               신촌종합설비
             </Link>
             <HeaderNav />
