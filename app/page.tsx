@@ -194,10 +194,6 @@ export default function Home() {
                 <span className="text-5xl leading-none" aria-hidden>
                   {item.emoji}
                 </span>
-                <svg className="h-14 w-14 shrink-0 text-blue-600" viewBox="0 0 64 64" fill="none" aria-hidden>
-                  <circle cx="32" cy="32" r="28" stroke="currentColor" strokeWidth="2" opacity="0.35" />
-                  <circle cx="32" cy="32" r="20" stroke="currentColor" strokeWidth="1.5" opacity="0.5" />
-                </svg>
               </div>
               <h3 className="text-lg font-bold text-blue-900">{item.title}</h3>
               <div className="mt-3 space-y-2 text-sm leading-relaxed text-slate-700">
@@ -237,17 +233,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="rounded-2xl border border-blue-200 bg-blue-50 px-6 py-8 text-center sm:px-8">
-        <h2 className="text-xl font-bold text-blue-900 sm:text-2xl">긴급 · 예약 상담</h2>
-        <p className="mt-2 text-sm text-slate-600">24시간 접수 · 서울 · 경기 · 인천 출동</p>
-        <a
-          href="tel:010-7553-2981"
-          className="mt-4 inline-flex items-center justify-center rounded-xl bg-blue-700 px-8 py-4 text-lg font-bold text-white shadow-md hover:bg-blue-800"
-        >
-          📞 010-7553-2981
-        </a>
-        <p className="mt-3 text-xs text-slate-500">카카오톡 문의는 링크 준비 후 연결 예정입니다.</p>
-      </section>
     </section>
   );
 }
