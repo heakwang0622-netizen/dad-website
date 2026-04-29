@@ -5,13 +5,13 @@ import { useState } from "react";
 
 const menuItems = [
   { href: "/", label: "홈" },
-  { href: "/누수탐지", label: "누수탐지" },
-  { href: "/하수구막힘", label: "하수구막힘" },
-  { href: "/씽크대막힘", label: "씽크대막힘" },
-  { href: "/변기막힘", label: "변기막힘" },
-  { href: "/소방배관", label: "소방배관" },
-  { href: "/언수도녹임", label: "언수도녹임" },
-  { href: "/작업후기", label: "작업후기" },
+  { href: "/leak-detection", label: "누수탐지" },
+  { href: "/drain", label: "하수구막힘" },
+  { href: "/sink", label: "씽크대막힘" },
+  { href: "/toilet", label: "변기막힘" },
+  { href: "/fire-pipe", label: "소방배관" },
+  { href: "/frozen-pipe", label: "언수도녹임" },
+  { href: "/reviews", label: "작업후기" },
   { href: "/contact", label: "문의하기" },
 ];
 
