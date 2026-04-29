@@ -33,24 +33,49 @@ export default function RootLayout({
           </div>
         </header>
         <main className="mx-auto w-full max-w-5xl flex-1 px-6 py-10 pb-32 md:pb-28">{children}</main>
-        <footer className="border-t border-blue-100 bg-white">
-          <div className="mx-auto w-full max-w-5xl px-6 py-4 text-sm text-slate-600">
-            24시간 출동 상담 | 010-7553-2981 | 주소: 서울시 서대문구 창천동 2-26
+        <footer className="border-t border-slate-800 bg-slate-900 text-slate-200">
+          <div className="mx-auto w-full max-w-6xl px-6 py-10">
+            <div className="border-b border-slate-700 pb-5">
+              <p className="text-2xl font-black tracking-tight text-white">신촌종합설비</p>
+              <p className="mt-2 text-sm text-slate-300">24시간 긴급출동</p>
+            </div>
+
+            <div className="mt-5 space-y-2 text-sm text-slate-300">
+              <p>회사명: 신촌종합설비</p>
+              <p>대표자: 이문학</p>
+              <p>사업자등록번호: 추후 기재 예정</p>
+              <p>주소: 서울시 서대문구 창천동 2-26</p>
+              <p>대표번호: 010-7553-2981</p>
+            </div>
+
+            <div className="mt-6 flex items-center gap-4 text-sm text-slate-300">
+              <a href="#" className="hover:text-white">
+                개인정보처리방침
+              </a>
+              <span className="text-slate-500">|</span>
+              <a href="#" className="hover:text-white">
+                이용약관
+              </a>
+            </div>
+
+            <p className="mt-6 text-xs text-slate-400">
+              copyright © 2026 신촌종합설비 All Rights Reserved.
+            </p>
           </div>
         </footer>
-        <div className="fixed inset-x-0 bottom-0 z-50 border-t border-blue-100 bg-white/95 backdrop-blur">
-          <div className="mx-auto flex w-full max-w-5xl flex-col gap-3 px-4 py-3 sm:flex-row">
+        <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-700 bg-slate-900/95 backdrop-blur">
+          <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-4 py-3 sm:flex-row">
             <a
               href="tel:010-7553-2981"
               className="flex-1 rounded-xl bg-blue-800 px-4 py-4 text-center text-base font-bold text-white shadow-lg hover:bg-blue-900"
             >
-              전화 연결 010-7553-2981
+              📞 24시 빠른상담 바로 통화 010-7553-2981
             </a>
             <a
               href="#"
               className="flex-1 rounded-xl bg-yellow-400 px-4 py-4 text-center text-base font-bold text-slate-900 shadow-lg hover:bg-yellow-300"
             >
-              카카오톡 상담 (링크 예정)
+              💬 카톡 상담
             </a>
           </div>
         </div>
