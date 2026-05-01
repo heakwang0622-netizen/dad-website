@@ -57,19 +57,29 @@ const faqs = [
 
 const reviews = [
   {
-    image: "/images/배관123.jpg",
+    image: "/images/work1.jpg",
     text: "하수구 막힘이 심했는데 원인 진단부터 처리까지 빠르고 깔끔했습니다.",
     author: "서울 마포구 고객",
   },
   {
-    image: "",
-    text: "누수탐지 정확도가 높아서 불필요한 공사 없이 바로 해결됐어요.",
+    image: "/images/frozen3.jpg",
+    text: "동파 복구도 신속하게 해주셔서 겨울에도 안심하고 이용했습니다.",
     author: "경기 고양시 고객",
   },
   {
-    image: "",
-    text: "야간 긴급출동도 친절하게 대응해주셔서 정말 만족했습니다.",
+    image: "/images/sink2.jpg",
+    text: "씽크대 배수 문제가 깔끔하게 해결됐고 악취도 사라졌어요.",
     author: "인천 부평구 고객",
+  },
+  {
+    image: "/images/pipe1.jpg",
+    text: "고압세척으로 막힌 하수구가 금방 뚫려서 만족스러웠습니다.",
+    author: "서울 서대문구 고객",
+  },
+  {
+    image: "/images/work10.jpg",
+    text: "현장 설명이 명확하고 작업 후 정리까지 꼼꼼했습니다.",
+    author: "경기 부천시 고객",
   },
 ];
 
@@ -97,7 +107,7 @@ export default function Home() {
     <section className="space-y-10">
       <div className="relative flex min-h-screen items-center justify-center overflow-hidden rounded-2xl border border-blue-100 bg-slate-50 px-6 py-14 sm:px-8">
         <Image
-          src="/images/배관123.jpg"
+          src="/images/work1.jpg"
           alt="배관 작업 배경 이미지"
           fill
           className="object-cover opacity-15 blur-[2px]"
@@ -158,21 +168,15 @@ export default function Home() {
           >
             {reviews.map((review, index) => (
               <article key={index} className="w-full shrink-0 rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-                {review.image ? (
-                  <div className="relative h-56 overflow-hidden rounded-lg">
-                    <Image
-                      src={review.image}
-                      alt={`작업 후기 사진 ${index + 1}`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 900px"
-                    />
-                  </div>
-                ) : (
-                  <div className="flex h-56 items-center justify-center rounded-lg border-2 border-dashed border-slate-300 bg-slate-100 text-slate-500">
-                    후기 이미지 자리 (추후 추가)
-                  </div>
-                )}
+                <div className="relative h-56 overflow-hidden rounded-xl">
+                  <Image
+                    src={review.image}
+                    alt={`작업 후기 사진 ${index + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 900px"
+                  />
+                </div>
                 <p className="mt-4 text-lg text-amber-400">⭐⭐⭐⭐⭐</p>
                 <p className="mt-2 text-base font-medium text-slate-800">{review.text}</p>
                 <p className="mt-1 text-sm font-semibold text-blue-700">{review.author}</p>
