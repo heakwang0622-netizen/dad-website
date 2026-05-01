@@ -168,12 +168,12 @@ export default function Home() {
           >
             {reviews.map((review, index) => (
               <article key={index} className="w-full shrink-0 rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-                <div className="relative h-56 overflow-hidden rounded-xl">
+                <div className="relative h-80 overflow-hidden rounded-xl bg-slate-100 sm:h-96 md:h-[28rem]">
                   <Image
                     src={review.image}
                     alt={`작업 후기 사진 ${index + 1}`}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                     sizes="(max-width: 768px) 100vw, 900px"
                   />
                 </div>
