@@ -11,7 +11,7 @@ const menuItems = [
   { href: "/toilet", label: "변기막힘" },
   { href: "/fire-pipe", label: "소방배관" },
   { href: "/frozen-pipe", label: "언수도녹임" },
-  { href: "/reviews", label: "작업후기" },
+  { href: "/작업후기", label: "작업후기" },
   { href: "/contact", label: "문의하기" },
 ];
 
