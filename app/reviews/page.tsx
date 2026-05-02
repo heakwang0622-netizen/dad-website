@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const dynamic = "force-dynamic";
+/** 서버 컴포넌트 — 브라우저 전용 훅 없음, `use client` 불필요(Vercel 정적 배포·이미지 최적화와 호환). */
 
 type ReviewCard = {
   title: string;
