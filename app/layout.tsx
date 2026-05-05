@@ -22,6 +22,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
         />
+        <meta name="naver-site-verification" content="691b9a24518d3a25475318dac8a7e893ce4090ec" />
       </head>
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         <header className="border-b border-blue-100 bg-white">
