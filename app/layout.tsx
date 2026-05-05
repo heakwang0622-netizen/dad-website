@@ -14,14 +14,6 @@ export const metadata: Metadata = {
     description: "서울 서대문구 신촌 종합설비. 누수탐지, 하수구막힘, 변기막힘 전문. 010-7553-2981",
     url: "https://sinchon-sulbi.com",
     siteName: "신촌종합설비",
-    images: [
-      {
-        url: "https://sinchon-sulbi.com/images/leak1.jpg",
-        width: 1200,
-        height: 630,
-        alt: "신촌종합설비 작업 현장",
-      },
-    ],
     locale: "ko_KR",
     type: "website",
   },
@@ -29,7 +21,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "신촌종합설비 | 24시 긴급출동 설비전문",
     description: "서울 서대문구 신촌 종합설비. 누수탐지, 하수구막힘, 변기막힘 전문. 010-7553-2981",
-    images: ["https://sinchon-sulbi.com/images/leak1.jpg"],
   },
 };
 
@@ -48,9 +39,6 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
         />
         <meta name="naver-site-verification" content="691b9a24518d3a25475318dac8a7e893ce4090ec" />
-        <meta property="og:image" content="https://sinchon-sulbi.com/images/leak1.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
       </head>
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         <header className="border-b border-blue-100 bg-white">
