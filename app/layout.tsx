@@ -48,6 +48,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
         />
         <meta name="naver-site-verification" content="691b9a24518d3a25475318dac8a7e893ce4090ec" />
+        <meta property="og:image" content="https://sinchon-sulbi.com/images/leak1.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </head>
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         <header className="border-b border-blue-100 bg-white">
