@@ -14,8 +14,22 @@ export const metadata: Metadata = {
     description: "서울 서대문구 신촌 종합설비. 누수탐지, 하수구막힘, 변기막힘 전문. 010-7553-2981",
     url: "https://sinchon-sulbi.com",
     siteName: "신촌종합설비",
+    images: [
+      {
+        url: "https://sinchon-sulbi.com/images/work1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "신촌종합설비 작업 현장",
+      },
+    ],
     locale: "ko_KR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "신촌종합설비 | 24시 긴급출동 설비전문",
+    description: "서울 서대문구 신촌 종합설비. 누수탐지, 하수구막힘, 변기막힘 전문. 010-7553-2981",
+    images: ["https://sinchon-sulbi.com/images/work1.jpg"],
   },
 };
 
