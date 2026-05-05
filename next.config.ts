@@ -4,8 +4,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/%EC%9E%91%EC%97%85%ED%9B%84%EA%B8%B0",
-        destination: "/reviews",
+        source: '/%EC%9E%91%EC%97%85%ED%9B%84%EA%B8%B0',
+        destination: '/reviews',
         permanent: true,
       },
     ];
@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: false,
-    domains: ["sinchon-sulbi.com"],
+    unoptimized: true,
   },
 };
 
