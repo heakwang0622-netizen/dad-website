@@ -1,8 +1,14 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
 
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "씽크대막힘 해결 | 신촌종합설비",
+  description: "서대문구 씽크대막힘 전문. 배수관 교체 및 수리. 010-7553-2981",
+};
 
 
 

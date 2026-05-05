@@ -1,8 +1,15 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
 
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "누수탐지 전문 | 신촌종합설비",
+  description:
+    "서대문구 누수탐지 전문업체. 열화상카메라로 정확한 누수위치 파악. 24시 긴급출동. 010-7553-2981",
+};
 
 
 

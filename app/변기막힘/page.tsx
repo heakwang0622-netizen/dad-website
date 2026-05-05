@@ -1,8 +1,14 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
 
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "변기막힘 응급처치 | 신촌종합설비",
+  description: "서대문구 변기막힘 24시 긴급출동. 야간출동 가능. 빠른해결. 010-7553-2981",
+};
 
 
 

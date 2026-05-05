@@ -1,8 +1,14 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
 
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "하수구막힘 해결 | 신촌종합설비",
+  description: "서대문구 하수구막힘 전문. 당일출동 즉시해결. 악취제거까지. 010-7553-2981",
+};
 
 
 

@@ -1,8 +1,14 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
 
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "언수도녹임 동파해결 | 신촌종합설비",
+  description: "서대문구 수도동파 언수도녹임 전문. 특수장비로 빠른 해동. 010-7553-2981",
+};
 
 
 

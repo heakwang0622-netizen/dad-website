@@ -1,6 +1,12 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
 /** 서버 컴포넌트 — 브라우저 전용 훅 없음, `use client` 불필요(Vercel 정적 배포·이미지 최적화와 호환). */
+
+export const metadata: Metadata = {
+  title: "작업후기 | 신촌종합설비",
+  description: "신촌종합설비 실제 고객 작업후기. 누수탐지, 하수구막힘, 변기막힘 해결 사례. 010-7553-2981",
+};
 
 type ReviewCard = {
   title: string;

@@ -4,8 +4,19 @@ import HeaderNav from "./components/HeaderNav";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "신촌종합설비",
-  description: "하수구막힘, 누수탐지, 소방배관 전문 설비 서비스",
+  title: "신촌종합설비 | 서대문구 누수탐지 하수구막힘 변기막힘 24시 출동",
+  description:
+    "서울 서대문구 신촌 종합설비. 누수탐지, 하수구막힘, 변기막힘, 씽크대막힘, 언수도녹임, 소방배관 전문. 24시간 긴급출동. 010-7553-2981",
+  keywords:
+    "신촌설비, 서대문구설비, 누수탐지, 하수구막힘, 변기막힘, 씽크대막힘, 언수도녹임, 소방배관, 24시출동, 긴급출동",
+  openGraph: {
+    title: "신촌종합설비 | 24시 긴급출동 설비전문",
+    description: "서울 서대문구 신촌 종합설비. 누수탐지, 하수구막힘, 변기막힘 전문. 010-7553-2981",
+    url: "https://sinchon-sulbi.com",
+    siteName: "신촌종합설비",
+    locale: "ko_KR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

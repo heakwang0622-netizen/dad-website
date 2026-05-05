@@ -1,8 +1,14 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
 
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "소방배관 수리 | 신촌종합설비",
+  description: "서대문구 소방배관 누수점검 및 수리 전문. 010-7553-2981",
+};
 
 
 

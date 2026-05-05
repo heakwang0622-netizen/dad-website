@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "문의하기 | 신촌종합설비",
+  description: "신촌종합설비 24시 문의. 전화 010-7553-2981. 서울 서대문구 창천동 2-26",
+};
+
 export default function ContactPage() {
   return (
     <section className="grid gap-6 md:grid-cols-2">
