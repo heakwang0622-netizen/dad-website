@@ -15,7 +15,7 @@ const reviewCards: ReviewCard[] = [
   {
     title: "하수구 막힘 해결",
     rating: 5,
-    image: "/images/work1.jpg",
+    image: "/images/sink1.jpg",
     imageAlt:
       "[후기 사진] 하수구 막힘 해결 — 주방 배수구에서 진행한 막힘 제거·세척 작업 현장",
     text: "주방 하수구가 완전히 막혀서 연락드렸는데 1시간도 안 되어 도착하셨어요. 냄새까지 싹 잡아주셔서 정말 감사합니다!",
@@ -24,7 +24,7 @@ const reviewCards: ReviewCard[] = [
   {
     title: "누수탐지 및 배관 수리",
     rating: 5,
-    image: "/images/work2.jpg",
+    image: "/images/leak1.jpg",
     imageAlt:
       "[후기 사진] 누수탐지 및 배관 수리 — 장비로 누수 지점 확인 후 배관 보수한 현장",
     text: "벽 안에서 물 새는 소리가 났는데 장비로 정확히 위치 찾아주시고 최소한으로 뜯어 수리해주셨어요. 깔끔하게 마무리까지!",
@@ -42,7 +42,7 @@ const reviewCards: ReviewCard[] = [
   {
     title: "씽크대 배수 교체",
     rating: 5,
-    image: "/images/work4.jpg",
+    image: "/images/sink2.jpg",
     imageAlt:
       "[후기 사진] 씽크대 배수 교체 — 주방 씽크대 배수관을 새로 교체한 작업 현장",
     text: "씽크대 물이 역류해서 요청드렸는데 배수관까지 새것으로 교체해주셨어요. 작업 후 주변 정리도 깔끔하게 해주셔서 감동이었어요.",
@@ -51,7 +51,7 @@ const reviewCards: ReviewCard[] = [
   {
     title: "얼은 수도관 해동",
     rating: 5,
-    image: "/images/work5.jpg",
+    image: "/images/frozen1.jpg",
     imageAlt:
       "[후기 사진] 얼은 수도관 해동 — 동파된 수도관을 해동·복구한 작업 현장",
     text: "한파에 수도가 꽁꽁 얼어서 연락드렸는데 특수 장비로 빠르게 해동해주셨어요. 파이프 파열 없이 해결돼서 정말 다행이에요!",
@@ -60,7 +60,7 @@ const reviewCards: ReviewCard[] = [
   {
     title: "소방배관 점검 및 수리",
     rating: 5,
-    image: "/images/work6.jpg",
+    image: "/images/pipe1.jpg",
     imageAlt:
       "[후기 사진] 소방배관 점검 및 수리 — 건물 소방배관 누수 점검 후 수리한 현장",
     text: "건물 소방배관 누수로 연락드렸는데 꼼꼼하게 점검 후 문제 부위만 정확히 수리해주셨어요. 전문성이 느껴졌습니다.",
