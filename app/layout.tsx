@@ -22,6 +22,10 @@ export const metadata: Metadata = {
     title: "신촌종합설비 | 24시 긴급출동 설비전문",
     description: "서울 서대문구 신촌 종합설비. 누수탐지, 하수구막힘, 변기막힘 전문. 010-7553-2981",
   },
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
