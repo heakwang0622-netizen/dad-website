@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     description: "서울 서대문구 신촌 종합설비. 누수탐지, 하수구막힘, 변기막힘 전문. 010-7553-2981",
   },
   icons: {
-    icon: [{ url: "/icon.png?v=2", type: "image/png" }],
-    apple: "/icon.png?v=2",
-    shortcut: "/icon.png?v=2",
+    icon: [{ url: "/icon.png?v=3", type: "image/png" }],
+    apple: "/icon.png?v=3",
+    shortcut: "/icon.png?v=3",
   },
 };
 
