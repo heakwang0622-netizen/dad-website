@@ -119,16 +119,8 @@ export default function Home() {
 
   return (
     <section className="space-y-10">
-      <div className="relative flex min-h-screen items-center justify-center overflow-hidden rounded-2xl border border-blue-100 bg-slate-50 px-6 py-14 sm:px-8">
-        <Image
-          src="/images/work1.jpg"
-          alt="배관 작업 배경 이미지"
-          fill
-          className="object-cover opacity-10"
-          priority
-        />
-        <div className="absolute inset-0 bg-white/80" />
-        <div className="relative z-10 w-full max-w-4xl text-center">
+      <div className="flex min-h-screen items-center justify-center rounded-2xl border border-blue-100 bg-slate-50 px-6 py-14 sm:px-8">
+        <div className="w-full max-w-4xl text-center">
           <p className="text-2xl font-bold tracking-wide text-blue-700 sm:text-3xl">
             서울 · 경기 · 인천 24시간 긴급출동
           </p>
