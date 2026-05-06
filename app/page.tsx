@@ -124,10 +124,10 @@ export default function Home() {
           src="/images/work1.jpg"
           alt="배관 작업 배경 이미지"
           fill
-          className="object-cover opacity-15 blur-[2px]"
+          className="object-cover opacity-10"
           priority
         />
-        <div className="absolute inset-0 bg-white/70" />
+        <div className="absolute inset-0 bg-white/80" />
         <div className="relative z-10 w-full max-w-4xl text-center">
           <p className="text-2xl font-bold tracking-wide text-blue-700 sm:text-3xl">
             서울 · 경기 · 인천 24시간 긴급출동
