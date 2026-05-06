@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import HeaderNav from "./components/HeaderNav";
 import "./globals.css";
@@ -48,8 +49,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         <header className="border-b border-blue-100 bg-white">
           <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-4">
-            <Link href="/" className="whitespace-nowrap text-2xl font-black tracking-tight text-slate-800">
-              신촌종합설비
+            <Link href="/" className="flex items-center gap-2 whitespace-nowrap">
+              <Image src="/icon.png" alt="신촌종합설비 로고" width={36} height={36} className="rounded-md" />
+              <span className="text-2xl font-black tracking-tight text-slate-800">신촌종합설비</span>
             </Link>
             <HeaderNav />
           </div>
