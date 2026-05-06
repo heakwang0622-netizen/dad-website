@@ -67,7 +67,7 @@ export default function RootLayout({
             <div className="mt-5 space-y-2 text-sm text-slate-300">
               <p>회사명: 신촌종합설비</p>
               <p>대표자: 이문학</p>
-              <p>사업자등록번호: 추후 기재 예정</p>
+              <p>사업자등록번호: 196-19-02392</p>
               <p>주소: 서울시 서대문구 창천동 2-26</p>
               <p>대표번호: 010-7553-2981</p>
             </div>
