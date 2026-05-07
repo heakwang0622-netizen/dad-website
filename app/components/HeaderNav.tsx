@@ -21,14 +21,14 @@ export default function HeaderNav() {
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
-        className="flex h-10 w-10 items-center justify-center rounded-md border border-blue-200 text-blue-700 md:hidden"
+        className="flex h-9 w-9 items-center justify-center rounded-md border border-blue-200 text-blue-700 md:hidden"
         aria-label="메뉴 열기"
         aria-expanded={open}
       >
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect y="3" width="22" height="2.5" rx="1.25" fill="#1d4ed8" />
-          <rect y="9.75" width="22" height="2.5" rx="1.25" fill="#1d4ed8" />
-          <rect y="16.5" width="22" height="2.5" rx="1.25" fill="#1d4ed8" />
+        <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="3" width="22" height="2" rx="1.25" fill="#1d4ed8" />
+          <rect y="9.75" width="22" height="2" rx="1.25" fill="#1d4ed8" />
+          <rect y="16.5" width="22" height="2" rx="1.25" fill="#1d4ed8" />
         </svg>
       </button>
       <nav className="hidden items-center gap-6 text-base font-medium md:flex">
