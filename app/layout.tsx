@@ -95,29 +95,27 @@ export default function RootLayout({
             href="https://open.kakao.com/o/sinchon_sulbi"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex h-16 w-16 flex-col items-center justify-center gap-1 rounded-2xl bg-yellow-400 shadow-xl hover:bg-yellow-300"
+            className="flex w-44 flex-col gap-2 rounded-2xl bg-yellow-400 p-4 shadow-xl hover:bg-yellow-300"
           >
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="12" cy="11" rx="10" ry="8.5" fill="#3A1D1D" />
-              <ellipse cx="12" cy="11" rx="9" ry="7.5" fill="#FAE100" />
-              <path
-                d="M7 11c0-1.1.9-2 2-2s2 .9 2 2M13 11c0-1.1.9-2 2-2s2 .9 2 2"
-                stroke="#3A1D1D"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-              />
-              <circle cx="9" cy="11" r="0.8" fill="#3A1D1D" />
-              <circle cx="15" cy="11" r="0.8" fill="#3A1D1D" />
-              <path d="M9.5 13.5c.7.7 1.5 1 2.5 1s1.8-.3 2.5-1" stroke="#3A1D1D" strokeWidth="1.3" strokeLinecap="round" />
-            </svg>
-            <span className="text-xs font-bold text-slate-900">카카오톡 상담</span>
+            <div className="flex items-center gap-2">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-yellow-600">
+                <span className="text-sm font-black text-yellow-400">T</span>
+              </div>
+              <span className="text-sm font-black text-slate-900">TALK</span>
+            </div>
+            <p className="text-sm font-bold leading-snug text-slate-900">
+              궁금하신 점은<br />카카오 1:1 채팅으로<br />물어보세요!
+            </p>
+            <div className="mt-1 flex w-fit items-center gap-2 rounded-full bg-slate-900 px-4 py-2">
+              <span className="text-sm font-bold text-white">상담하기</span>
+              <span className="text-white">→</span>
+            </div>
           </a>
           <a
             href="tel:010-7553-2981"
-            className="flex h-16 w-16 flex-col items-center justify-center gap-1 rounded-2xl bg-blue-700 shadow-xl hover:bg-blue-800"
+            className="w-44 flex-1 rounded-xl bg-blue-800 px-4 py-4 text-center text-base font-bold text-white shadow-lg hover:bg-blue-900"
           >
-            <span className="text-2xl">📞</span>
-            <span className="text-xs font-bold text-white">전화 상담</span>
+            📞 24시 빠른상담 바로 통화 010-7553-2981
           </a>
         </div>
       </body>
