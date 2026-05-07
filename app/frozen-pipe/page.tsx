@@ -4,7 +4,9 @@ export default function FrozenPipePage() {
       <div className="rounded-2xl bg-blue-800 px-6 py-14 text-white">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-6xl">❄️</p>
-          <h1 className="mt-4 text-4xl font-black sm:text-5xl">동파된 수도관, 열선 장비로 빠르게 녹여드립니다</h1>
+          <h1 className="mt-4 text-4xl font-black sm:text-5xl">
+            동파된 수도관,<br />열선 장비로<br />빠르게 녹여드립니다
+          </h1>
           <p className="mt-4 text-blue-100">
             겨울철 언수도 문제를 안전하게 복구해 드립니다.
             <br />

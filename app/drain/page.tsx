@@ -4,7 +4,9 @@ export default function DrainBlockPage() {
       <div className="rounded-2xl bg-blue-800 px-6 py-14 text-white">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-6xl">🛠️</p>
-          <h1 className="mt-4 text-4xl font-black sm:text-5xl">막힌 하수구, 고압세척으로 시원하게 뚫어드립니다</h1>
+          <h1 className="mt-4 text-4xl font-black sm:text-5xl">
+            막힌 하수구,<br />고압세척으로<br />시원하게 뚫어드립니다
+          </h1>
           <p className="mt-4 text-blue-100">
             악취·역류·배수 불량 문제를 원인부터 해결합니다.
             <br />

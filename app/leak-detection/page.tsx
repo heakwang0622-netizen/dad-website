@@ -5,7 +5,7 @@ export default function LeakDetectionPage() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-6xl">💧</p>
           <h1 className="mt-4 text-4xl font-black sm:text-5xl">
-            보이지 않는 누수, 열화상 카메라로 정확히 찾아냅니다
+            보이지 않는 누수,<br />열화상 카메라로<br />정확히 찾아냅니다
           </h1>
           <p className="mt-4 text-blue-100">
             숨은 누수 지점을 빠르게 진단하고 불필요한 철거를 줄입니다.

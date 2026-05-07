@@ -4,7 +4,9 @@ export default function SinkBlockPage() {
       <div className="rounded-2xl bg-blue-800 px-6 py-14 text-white">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-6xl">🚿</p>
-          <h1 className="mt-4 text-4xl font-black sm:text-5xl">씽크대 막힘, 당일 출동 당일 해결</h1>
+          <h1 className="mt-4 text-4xl font-black sm:text-5xl">
+            씽크대 막힘,<br />당일 출동<br />당일 해결
+          </h1>
           <p className="mt-4 text-blue-100">
             주방 배수 불량과 악취 문제를 신속하게 처리합니다.
             <br />

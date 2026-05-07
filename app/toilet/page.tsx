@@ -4,7 +4,9 @@ export default function ToiletBlockPage() {
       <div className="rounded-2xl bg-blue-800 px-6 py-14 text-white">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-6xl">🚽</p>
-          <h1 className="mt-4 text-4xl font-black sm:text-5xl">변기 막힘 응급처치, 30분 내 도착</h1>
+          <h1 className="mt-4 text-4xl font-black sm:text-5xl">
+            변기 막힘 응급처치,<br />30분 내<br />도착
+          </h1>
           <p className="mt-4 text-blue-100">
             갑작스러운 변기 막힘과 역류 상황을 긴급 대응합니다.
             <br />

@@ -4,7 +4,9 @@ export default function FirePipePage() {
       <div className="rounded-2xl bg-blue-800 px-6 py-14 text-white">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-6xl">🧯</p>
-          <h1 className="mt-4 text-4xl font-black sm:text-5xl">소방배관 점검·교체, 법정 기준 완벽 대응</h1>
+          <h1 className="mt-4 text-4xl font-black sm:text-5xl">
+            소방배관 점검·교체,<br />법정 기준<br />완벽 대응
+          </h1>
           <p className="mt-4 text-blue-100">
             노후 배관 점검부터 교체 작업까지 체계적으로 진행합니다.
             <br />
