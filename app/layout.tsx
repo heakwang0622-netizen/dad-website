@@ -50,7 +50,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icon.png?v=3" />
       </head>
       <body className="min-h-full flex flex-col bg-white text-slate-900">
-        <header className="border-b border-blue-100 bg-white">
+        <header className="relative border-b border-blue-100 bg-white">
           <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-4">
             <Link href="/" className="flex items-center gap-2 whitespace-nowrap">
               <Image src="/icon.png" alt="신촌종합설비 로고" width={36} height={36} className="rounded-md" />

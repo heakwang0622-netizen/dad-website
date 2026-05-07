@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { useState } from "react";
 
@@ -17,43 +16,40 @@ const menuItems = [
 
 export default function HeaderNav() {
   const [open, setOpen] = useState(false);
-
   return (
-    <div className="w-full">
-      <div className="flex items-center justify-end md:hidden">
-        <button
-          type="button"
-          onClick={() => setOpen((prev) => !prev)}
-          className="rounded-md border border-blue-200 px-3 py-2 text-xl font-bold text-blue-700"
-          aria-label="메뉴 열기"
-          aria-expanded={open}
-        >
-          ☰
-        </button>
-      </div>
-
-      <nav className="hidden items-center justify-center gap-6 text-base font-medium md:flex">
+    <>
+      <button
+        type="button"
+        onClick={() => setOpen((prev) => !prev)}
+        className="rounded-md border border-blue-200 px-3 py-2 text-xl font-bold text-blue-700 md:hidden"
+        aria-label="메뉴 열기"
+        aria-expanded={open}
+      >
+        ☰
+      </button>
+      <nav className="hidden items-center gap-6 text-base font-medium md:flex">
         {menuItems.map((item) => (
           <Link key={item.label} href={item.href} className="text-slate-700 hover:text-blue-700">
             {item.label}
           </Link>
         ))}
       </nav>
-
       {open && (
-        <nav className="mt-3 flex flex-col gap-2 rounded-lg border border-blue-100 bg-white p-3 text-base font-medium md:hidden">
-          {menuItems.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="rounded-md px-2 py-2 text-slate-700 hover:bg-blue-50 hover:text-blue-700"
-              onClick={() => setOpen(false)}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+        <div className="absolute left-0 right-0 top-full z-50 border-t border-blue-100 bg-white shadow-lg md:hidden">
+          <nav className="mx-auto flex max-w-6xl flex-col px-6 py-3">
+            {menuItems.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="border-b border-slate-100 py-3 text-base font-medium text-slate-700 hover:text-blue-700"
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
       )}
-    </div>
+    </>
   );
 }
