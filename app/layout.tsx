@@ -90,21 +90,23 @@ export default function RootLayout({
             </p>
           </div>
         </footer>
-        <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-700 bg-slate-900/95 backdrop-blur">
-          <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-4 py-3 sm:flex-row">
-            <a
-              href="tel:010-7553-2981"
-              className="flex-1 rounded-xl bg-blue-800 px-4 py-4 text-center text-base font-bold text-white shadow-lg hover:bg-blue-900"
-            >
-              📞 24시 빠른상담 바로 통화 010-7553-2981
-            </a>
-            <a
-              href="#"
-              className="flex-1 rounded-xl bg-yellow-400 px-4 py-4 text-center text-base font-bold text-slate-900 shadow-lg hover:bg-yellow-300"
-            >
-              💬 카톡 상담
-            </a>
-          </div>
+        <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+          <a
+            href="https://open.kakao.com/o/sinchon_sulbi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center gap-1 rounded-2xl bg-yellow-400 px-5 py-4 shadow-xl hover:bg-yellow-300"
+          >
+            <span className="text-2xl">💬</span>
+            <span className="text-xs font-bold text-slate-900">카카오 상담</span>
+          </a>
+          <a
+            href="tel:010-7553-2981"
+            className="flex flex-col items-center gap-1 rounded-2xl bg-blue-700 px-5 py-4 shadow-xl hover:bg-blue-800"
+          >
+            <span className="text-2xl">📞</span>
+            <span className="text-xs font-bold text-white">전화 상담</span>
+          </a>
         </div>
       </body>
     </html>
