@@ -96,13 +96,13 @@ export default function RootLayout({
               href="tel:010-7553-2981"
               className="flex-1 rounded-xl bg-blue-800 px-4 py-4 text-center text-base font-bold text-white shadow-lg hover:bg-blue-900"
             >
-              📞 24시 빠른상담 바로 통화 010-7553-2981
+              📞 바로통화 010-7553-2981
             </a>
             <a
               href="#"
               className="flex-1 rounded-xl bg-yellow-400 px-4 py-4 text-center text-base font-bold text-slate-900 shadow-lg hover:bg-yellow-300"
             >
-              💬 카톡 상담
+              카톡 상담
             </a>
           </div>
         </div>
