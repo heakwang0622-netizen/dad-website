@@ -23,10 +23,6 @@ export const metadata: Metadata = {
     title: "신촌종합설비 | 24시 긴급출동 설비전문",
     description: "서울 서대문구 신촌 종합설비. 누수탐지, 하수구막힘, 변기막힘 전문. 010-7553-2981",
   },
-  icons: {
-    icon: "/icon.png?v=4",
-    apple: "/icon.png?v=4",
-  },
 };
 
 export default function RootLayout({
@@ -44,9 +40,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
         />
         <meta name="naver-site-verification" content="691b9a24518d3a25475318dac8a7e893ce4090ec" />
-        <link rel="icon" href="/icon.png?v=4" sizes="any" />
-        <link rel="icon" href="/icon.png?v=4" type="image/png" sizes="32x32" />
-        <link rel="apple-touch-icon" href="/icon.png?v=4" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/icon.png" />
       </head>
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         <header className="relative border-b border-blue-100 bg-white">
